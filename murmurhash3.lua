@@ -39,6 +39,10 @@ local function hash(data, len, seed)
 	return h1
 end
 
+local function hash32(data, len, seed)
+	return hash(data, len, seed)
+end
+
 if not ... then require'murmurhash3_test' end
 
 return hash
